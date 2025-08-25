@@ -1,6 +1,6 @@
 [build]
-  # Build command
-  command = "npm run build"
+  # Build command with explicit install
+  command = "npm ci && npm run build"
   
   # Directory with the static files
   publish = "dist"
@@ -8,7 +8,8 @@
   # Environment variables for build
   [build.environment]
     NODE_VERSION = "18"
-    NPM_VERSION = "8"
+    NPM_VERSION = "9"
+    NODE_ENV = "production"
 
 # Redirect rules for SPA (Single Page Application)
 [[redirects]]
