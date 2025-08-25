@@ -1,0 +1,18 @@
+# Handle client-side routing for React Router
+/*    /index.html   200
+
+# Optional: Redirect HTTP to HTTPS in production
+# https://fin-garden.netlify.app/* https://fin-garden.netlify.app/:splat 301!
+
+# API routes if you have a backend (adjust as needed)
+# /api/*  https://your-api-domain.com/api/:splat  200
+
+# Cache static assets
+/static/*  /static/:splat  200  Cache-Control:max-age=31536000
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-XSS-Protection: 1; mode=block
