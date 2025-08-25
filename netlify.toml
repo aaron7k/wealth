@@ -1,6 +1,6 @@
 [build]
-  # Build command with explicit install
-  command = "npm ci && npm run build"
+  # Build command with explicit install and npx
+  command = "npm ci && npx vite build"
   
   # Directory with the static files
   publish = "dist"
