@@ -1,14 +1,14 @@
 [build]
-  # Build command with explicit install and npx
-  command = "npm ci && npx vite build"
+  # Build command with explicit install
+  command = "npm ci && npm run build"
   
   # Directory with the static files
   publish = "dist"
   
   # Environment variables for build
   [build.environment]
-    NODE_VERSION = "18"
-    NPM_VERSION = "9"
+    NODE_VERSION = "20"
+    NPM_VERSION = "10"
     NODE_ENV = "production"
 
 # Redirect rules for SPA (Single Page Application)
